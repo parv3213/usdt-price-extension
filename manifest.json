@@ -1,28 +1,20 @@
 {
-  "name": "Ethereum Gas Price Extension",
-  "version": "1.10",
-  "description": "Displays the current gas price using your preferred gas price provider.",
+  "name": "USDT Ticker",
+  "version": "0.0.1",
+  "description": "USDT to INR ticker",
   "manifest_version": 2,
   "background": {
     "page": "src/background.html",
     "persistent": false
   },
-  "icons": { 
+  "icons": {
     "16": "static/icon16.png",
     "48": "static/icon48.png",
-    "128": "static/icon128.png" 
+    "128": "static/icon128.png"
   },
   "browser_action": {
     "default_icon": "static/icon.png",
-    "default_title": "Ethereum Gas Price",
-    "default_popup": "src/popup.html"
+    "default_title": "USDT Ticker"
   },
-  "permissions": [
-    "alarms",
-    "storage"
-  ],
-  "options_ui": {
-    "page": "src/options.html",
-    "open_in_tab": true
-  }
+  "permissions": ["alarms"]
 }
