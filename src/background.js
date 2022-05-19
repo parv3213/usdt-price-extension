@@ -3,8 +3,8 @@ chrome.alarms.create('fetch_usdt_price', {
   periodInMinutes: 30,
 })
 
-chrome.alarms.onAlarm.addListener((alarmName) => {
-  chrome.browserAction.setBadgeText({ text: alarmName.name })
+chrome.alarms.onAlarm.addListener(async (alarmName) => {
+  chrome.browserAction.setBadgeText({ text: String(await priceResult()) })
 })
 
 const setBadge = async () => {
